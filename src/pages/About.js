@@ -88,7 +88,7 @@ function About() {
       <Navbar />
       <div className="px-40 py-20 cursor-none sm:px-16 xs:px-7" ref={textRef}>
         <div>
-          <h1 className="text-4xl font-semibold text-[#cccccc] pb-5">
+          <h1 className="text-4xl font-semibold text-[#79807c] pb-5 dark:text-white">
             Hi there, this is Varun<span className="text-purple-500">.</span>
           </h1>
           <p className="text-2xl pb-4 text-[#666666] xs:text-xl">
@@ -116,34 +116,32 @@ function About() {
       </div>
       <div className="px-40 flex justify-between pb-10 sm:px-16 sm:flex-col sm:gap-10 xs:px-7">
         <div>
-          <h1 className="text-[#79807c] font-bold text-xl sm:text-3xl pb-3">
+          <h1 className="text-[#79807c] font-bold text-xl sm:text-3xl pb-3 dark:text-slate-200">
             Student at
           </h1>
           <a
             href="https://dbit.co.in/"
             target="_blank"
-            className="dark:text-white mb-1 font-light tracking-wide text-[#666666] after:content-[''] after:absolute after:w-0 after:h-[2px] after:-bottom-1 after:bg-purple-500 after:rounded-md relative after:left-0 hover:after:w-full after:transition-all hover:italic"
+            className="mb-1 font-light tracking-wide text-[#666666] after:content-[''] after:absolute after:w-0 after:h-[2px] after:-bottom-1 after:bg-purple-500 after:rounded-md relative after:left-0 hover:after:w-full after:transition-all hover:italic"
           >
             Don Bosco Institute of Technology
           </a>
-          <p className="dark:text-white font-light tracking-wide text-[#666666]">
+          <p className="font-light tracking-wide text-[#666666]">
             Department of Information Science Engineering
           </p>
-          <p className="dark:text-white font-light tracking-wide text-[#666666]">
-            4th Year
-          </p>
-          <p className="dark:text-white font-light tracking-wide text-[#666666]">
+          <p className="font-light tracking-wide text-[#666666]">4th Year</p>
+          <p className="font-light tracking-wide text-[#666666]">
             Bengaluru - 560040
           </p>
-          <p className="dark:text-white font-light tracking-wide text-[#666666]">
+          <p className="font-light tracking-wide text-[#666666]">
             Karnataka, IN
           </p>
         </div>
         <div>
-          <h1 className="text-[#79807c] font-bold text-xl sm:text-3xl pb-3">
+          <h1 className="text-[#79807c] font-bold text-xl sm:text-3xl pb-3 dark:text-slate-200">
             Connect
           </h1>
-          <div className="flex flex-col items-start gap-3">
+          <div className="flex flex-col items-start gap-1">
             {" "}
             <p className="font-light tracking-wide text-[#666666]">
               <a
@@ -151,7 +149,9 @@ function About() {
                 target="_blank"
                 className="cursor-pointer hover:text-[#cccccc] text-2xl flex items-center justify-center gap-4 group dark:text-white"
               >
-                <p className="text-sm">LinkedIN</p>
+                <p className="font-light tracking-wide text-[#666666] text-[1rem]">
+                  LinkedIN
+                </p>
                 <i className="fi fi-brands-linkedin group-hover:translate-x-2 transition-all"></i>
               </a>
             </p>
@@ -161,7 +161,9 @@ function About() {
                 target="_blank"
                 className="cursor-pointer hover:text-[#cccccc] text-2xl flex items-center justify-center gap-4 group dark:text-white"
               >
-                <p className="text-sm">GitHub</p>
+                <p className="font-light tracking-wide text-[#666666] text-[1rem]">
+                  GitHub
+                </p>
                 <i className="fi fi-brands-github group-hover:translate-x-2 transition-all"></i>
               </a>
             </p>
@@ -171,7 +173,9 @@ function About() {
                 target="_blank"
                 className="cursor-pointer hover:text-[#cccccc] text-2xl flex items-center justify-center gap-4 group dark:text-white"
               >
-                <p className="text-sm">Email</p>
+                <p className="font-light tracking-wide text-[#666666] text-[1rem]">
+                  Email
+                </p>
                 <i className="fi fi-rr-at group-hover:translate-x-2 transition-all"></i>
               </a>
             </p>
@@ -181,36 +185,30 @@ function About() {
                 target="_blank"
                 className="cursor-pointer hover:text-[#cccccc] text-2xl flex items-center justify-center gap-4 group dark:text-white"
               >
-                <p className="text-sm">Inatagram</p>
+                <p className="font-light tracking-wide text-[#666666] text-[1rem]">
+                  Inatagram
+                </p>
                 <i className="fi fi-brands-instagram group-hover:translate-x-2 transition-all"></i>
               </a>
             </p>
           </div>
         </div>
         <div>
-          <h1 className="text-[#79807c] font-bold text-xl sm:text-3xl pb-3">
+          <h1 className="text-[#79807c] font-bold text-xl sm:text-3xl pb-3 dark:text-slate-200">
             On Going
           </h1>
-          <p className="font-light tracking-wide text-[#666666] dark:text-white">
-            Web 3.0
-          </p>
-          <p className="font-light tracking-wide text-[#666666] dark:text-white">
-            Flutter
-          </p>
-          <p className="font-light tracking-wide text-[#666666] dark:text-white">
-            GoLang
-          </p>
-          <p className="font-light tracking-wide text-[#666666] dark:text-white">
-            DevOps
-          </p>
+          <p className="font-light tracking-wide text-[#666666]">Web 3.0</p>
+          <p className="font-light tracking-wide text-[#666666]">Flutter</p>
+          <p className="font-light tracking-wide text-[#666666]">GoLang</p>
+          <p className="font-light tracking-wide text-[#666666]">DevOps</p>
         </div>
       </div>
       <div className="px-40 py-20 sm:px-16 xs:px-7">
-        <h1 className="text-8xl pb-10 cursor-default dark:text-white sm:text-6xl font-medium">
+        <h1 className="text-8xl pb-10 cursor-default dark:text-white sm:text-6xl font-medium text-[#79807c]">
           Beyond the Code
         </h1>
         <div>
-          <p className="pb-5 dark:text-white">
+          <p className="pb-5 text-[#666666]">
             Music fuels my creativity and keeps me energized throughout the day.
             I'm into K-pop, enjoying{" "}
             <span className="text-purple-500">BTS</span>, BLACK

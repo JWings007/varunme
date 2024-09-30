@@ -64,10 +64,10 @@ function Footer() {
 
   return (
     <div className="px-40 py-20 sm:px-16 xs:px-7" id="contact">
-      <h1 className="text-5xl font-semibold pb-5 dark:text-white">
+      <h1 className="text-5xl font-semibold pb-5 dark:text-white text-[#666666]">
         Get in Touch
       </h1>
-      <p className="pb-14 dark:text-white">
+      <p className="pb-14 text-[#666666]">
         Let's create something amazing together. Drop me a message, and I'll get
         back to you soon!
       </p>
@@ -108,13 +108,13 @@ function Footer() {
       </div>
       <div className="flex pt-12 items-center justify-between">
         <div className="">
-          <p className="pb-2 dark:text-white">
+          <p className="pb-2 text-[#666666]">
             Imagined and developed by Varun.
           </p>
-          <p className="dark:text-white">&copy; Varun C 2024</p>
+          <p className="text-[#666666]">&copy; Varun C 2024</p>
         </div>
         <div
-          className="w-16 h-16 bg-purple-400 rounded-[50%] flex items-center cursor-pointer justify-center group hover:-translate-y-2 transition-all"
+          className="w-16 h-16 bg-[#d8b4fe] rounded-[50%] flex items-center cursor-pointer justify-center group hover:-translate-y-2 transition-all"
           onClick={() => window.scrollTo(0, 0)}
         >
           <i className="fi fi-rr-arrow-up pt-2 text-xl group-hover:-translate-y-2 transition-all"></i>

@@ -5,8 +5,8 @@ import resumePDF from "../assets/Resume.pdf";
 function Resume() {
   return (
     <div className="px-40 py-20 sm:px-16 xs:px-7">
-      <h1 className="text-5xl font-semibold pb-5 dark:text-white">Resume</h1>
-      <p className="dark:text-white">
+      <h1 className="text-5xl font-semibold pb-5 dark:text-white text-[#666666]">Resume</h1>
+      <p className="dark:text-white text-[#666666]">
         Discover my journey—download my resume to see how passion meets
         expertise.
       </p>

@@ -84,12 +84,12 @@ function Navbar() {
           ></label>
         </div>
       </div>
-      <div className="flex items-center justify-center text-[#cccccc] gap-10">
+      <div className="flex items-center justify-center text-[#cccccc] gap-10 sm:gap-5">
         <a
           href="/"
           className={`${
             location.pathname === "/"
-              ? "text-black dark:text-white dark:after:bg-white font-bold after:content-[''] after:h-1 after:w-full after:absolute relative after:-top-full after:bg-black after:left-0"
+              ? "text-black dark:text-white dark:after:bg-white font-bold after:content-[''] after:h-1 after:w-full after:absolute relative after:-top-full after:bg-black after:left-0 sm:text-sm"
               : ""
           }`}
         >
@@ -99,7 +99,7 @@ function Navbar() {
           href="/about"
           className={`${
             location.pathname === "/about"
-              ? "text-black dark:text-white dark:after:bg-white font-bold after:content-[''] after:h-1 after:w-full after:absolute relative after:-top-full after:bg-black after:left-0"
+              ? "text-black dark:text-white dark:after:bg-white font-bold after:content-[''] after:h-1 after:w-full after:absolute relative after:-top-full after:bg-black after:left-0 sm:text-sm"
               : ""
           }`}
         >

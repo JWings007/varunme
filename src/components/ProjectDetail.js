@@ -72,7 +72,7 @@ function ProjectDetail() {
               <img
                 src={projectDets.image}
                 alt=""
-                className="w-3/4 h-full object-cover transition-all duration-500"
+                className="w-full h-full object-cover transition-all duration-500"
               />
             </div>
           </div>
@@ -89,7 +89,7 @@ function ProjectDetail() {
                 }}
               >
                 Github
-                <i className="devicon-github-original colored pl-3 sm:pl-0"></i>
+                <i className="devicon-github-original colored pl-3"></i>
               </button>
               <button
                 className="text-black w-40 flex items-center justify-center py-2 rounded-md bg-purple-300 after:content-[''] after:absolute after:w-full after:translate-x-full after:h-full after:bg-[#f0f0f0] after:top-0 after:left-0 relative z-10 after:-z-10 hover:after:translate-x-0 overflow-hidden after:transition-all after:duration-300 sm:w-20 sm:px-8"
@@ -105,25 +105,25 @@ function ProjectDetail() {
           <div className="flex gap-10 pb-5 mt-10 sm:flex-wrap">
             {projectDets.techs
               ? projectDets.techs.map((t, i) => (
-                  <i className={`devicon-${t} colored text-4xl`} key={i}></i>
+                  <i className={`devicon-${t} colored text-4xl sm:text-2xl`} key={i}></i>
                 ))
               : null}
           </div>
           <div className="flex items-start mt-10 dark:text-white sm:flex-col">
-            <h1 className="w-1/4 text-4xl font-medium sm:w-full sm:pb-4">
+            <h1 className="w-1/4 text-4xl font-medium sm:w-full sm:pb-4 text-[#666666]">
               Brief
             </h1>
             <div className="w-3/4 sm:w-full">
-              <h2 className="text-xl font-semibold">
+              <h2 className="text-xl font-semibold text-[#666666]">
                 {projectDets.brief?.heading || "N/A"}
               </h2>
-              <p className="leading-relaxed pt-10">
+              <p className="leading-relaxed pt-10 text-[#79807c]">
                 {projectDets.brief?.desc || "No description available."}
               </p>
             </div>
           </div>
           <div className="flex items-start mt-10 dark:text-white sm:flex-col">
-            <h1 className="w-1/4 text-4xl font-medium sm:w-full sm:pb-4">
+            <h1 className="w-1/4 text-4xl font-medium sm:w-full sm:pb-4 text-[#666666]">
               Development Process
             </h1>
             <div className="w-3/4 sm:w-full sm:px-5">
@@ -131,10 +131,10 @@ function ProjectDetail() {
                 {projectDets.dProcess ? (
                   projectDets.dProcess.map((dp, i) => (
                     <li className="pb-5" key={i}>
-                      <h1 className="font-semibold pb-2 text-xl">
+                      <h1 className="font-semibold pb-2 text-xl text-[#666666]">
                         {dp.listHead}
                       </h1>
-                      <p>{dp.listDesc}</p>
+                      <p className="text-[#79807c]">{dp.listDesc}</p>
                     </li>
                   ))
                 ) : (
@@ -144,22 +144,22 @@ function ProjectDetail() {
             </div>
           </div>
           <div className="flex items-start mt-10 dark:text-white sm:flex-col">
-            <h1 className="w-1/4 text-4xl font-medium sm:w-full sm:pb-4">
+            <h1 className="w-1/4 text-4xl font-medium sm:w-full sm:pb-4 text-[#666666]">
               Ongoing
             </h1>
             <div className="w-3/4 sm:w-full">
-              <h2 className="text-2xl font-semibold">
+              <h2 className="text-2xl font-semibold text-[#666666]">
                 {projectDets.ongoing?.ongoingHead || "N/A"}
               </h2>
-              <p className="leading-relaxed pt-10">
+              <p className="leading-relaxed pt-10 text-[#79807c]">
                 {projectDets.ongoing?.ongoingDesc ||
                   "No ongoing details available."}
               </p>
             </div>
           </div>
-          <div className="py-20 dark:text-white">
+          <div className="py-20 dark:text-white text-[#79807c]">
             <p className="pb-2">Imagined and developed by Varun.</p>
-            <p>&copy; Varun C 2024</p>
+            <p className="text-[#79807c]">&copy; Varun C 2024</p>
           </div>
         </div>
       ) : null}

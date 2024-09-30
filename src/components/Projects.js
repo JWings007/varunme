@@ -98,7 +98,7 @@ function Projects() {
   return (
     <>
       <div
-        className="w-full h-screen overflow-hidden px-40 sm:px-16 sm:flex sm:items-center sm:justify-center"
+        className="w-full h-screen overflow-hidden px-40 sm:px-16 sm:flex sm:items-center sm:justify-center sm:flex-col sm:gap-16" 
         ref={headParent}
         data-scroll
         data-scroll-speed="-2"
@@ -109,6 +109,10 @@ function Projects() {
         >
           WORK<span className="mr-20"></span>GALLERY
         </h1>
+        <div className="flex items-center justify-center flex-col">
+        <h1 className="text-center font-light text-xl text-[#666666]">SCROLL</h1>
+        <i className="fi fi-rr-angle-down text-[#666666]"></i>
+        </div>
       </div>
       <div className="w-full px-40 py-20 flex flex-col gap-40 sm:px-16 xs:px-7">
         <a href="/project/soundspace">
@@ -131,7 +135,7 @@ function Projects() {
               SoundSpace.{" "}
               <i className="fi fi-rr-arrow-right pt-3 group-hover:translate-x-4 transition-all duration-500"></i>
             </h1>
-            <p className=" dark:text-white">
+            <p className=" dark:text-white text-[#666666]">
               A playlist sharing social media platform, because we care!!
             </p>
             <div className="w-full bg-[#f0f0f0] mt-5 rounded-xl group-hover:bg-[#f9f9f9] transition-all duration-300 dark:bg-[#282828] dark:hover:bg-[#191919] dark:group-hover:bg-[#191919]">
@@ -160,7 +164,7 @@ function Projects() {
               MOVIED.{" "}
               <i className="fi fi-rr-arrow-right pt-3 group-hover:translate-x-4 transition-all duration-500"></i>
             </h1>
-            <p className=" dark:text-white">
+            <p className=" dark:text-white text-[#666666]">
               Built a responsive website using the TMDB API to showcase detailed
               movie and TV show information with an intuitive, modern UI,
               providing users with data like descriptions, box office stats, and
@@ -195,7 +199,7 @@ function Projects() {
               HMS DISTRIBUTORS{" "}
               <i className="fi fi-rr-arrow-right pt-3 group-hover:translate-x-4 transition-all duration-500"></i>
             </h1>
-            <p className="dark:text-white">
+            <p className="dark:text-white text-[#666666]">
               Designed and launched a website for HMS Egg Distributors to update
               and display daily prices of various egg types.
             </p>
